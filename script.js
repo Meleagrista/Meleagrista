@@ -120,7 +120,7 @@ function dislikeImage() {
 }
 
 async function sendFeedback(action) {
-    const userId = "0yXlboLdnDVDCGUpiu0ZoF8Y5Lz2";
+    const userId = localStorage.getItem("loggedInUser");
     const queryParams = new URLSearchParams({
         user_id: userId,
         image_id: currentImageId
