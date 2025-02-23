@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Container -->
+    <div id="loginContainer">
+        <h2>Enter Test User ID</h2>
+        <label for="userIdInput"></label><input type="text" id="userIdInput" placeholder="Enter User ID...">
+        <label for="urlInput"></label><input type="text" id="urlInput" placeholder="Enter API URL...">
+        <button onclick="validateLogin()">Login</button>
+        <p id="error"></p>
+    </div>
+
+    <!-- App Container (Hidden Initially) -->
+    <div id="appContainer">
+        <!-- Gender Slider -->
+        <div class="gender-slider-container">
+            <div class="gender-slider">
+                <!-- Female Symbol -->
+                <div id="femaleOption" class="gender-option selected-female">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          style="transform: translate(-1px, 1px);">
+                        <circle cx="12" cy="8" r="5" stroke="white" stroke-width="2.5" fill="none"/>
+                        <line x1="12" y1="12" x2="12" y2="22" stroke="white" stroke-width="2.5"/>
+                        <line x1="8" y1="18" x2="16" y2="18" stroke="white" stroke-width="2.5"/>
+                    </svg>
+                </div>
+
+                <!-- Male Symbol -->
+                <div id="maleOption" class="gender-option">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         style="transform: translate(1px, 3px);">
+                        <circle cx="10" cy="12" r="5" stroke="white" stroke-width="2.5" fill="none"/>
+                        <line x1="13" y1="8" x2="20" y2="2" stroke="white" stroke-width="2.5"/>
+                        <line x1="20" y1="10" x2="20" y2="1" stroke="white" stroke-width="2.5"/>
+                        <line x1="12" y1="2" x2="21" y2="2" stroke="white" stroke-width="2.5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Container -->
+        <div id="imageContainer"></div>
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <button id="dislikeButton" class="dislike-button disabled">Dislike</button>
+            <button id="skipButton" class="skip-button">Skip</button>
+            <button id="likeButton" class="like-button disabled">Like</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
