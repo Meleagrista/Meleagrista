@@ -7,7 +7,7 @@
 _generated with [Platane/snk](https://github.com/Platane/snk)_
 
 ## About Me
-- I like people.. most people, or at least some people. I actually prefer software and games.
+- I like people... most people, or at least some people. I actually prefer software and games.
 - I’m currently a Research Engineer at [ITG](https://itg.es).
 - I am a mess with a compulsion to make everything neat.
 
