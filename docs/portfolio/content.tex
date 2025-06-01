@@ -1,0 +1,47 @@
+% content-en.tex
+
+\usepackage{styles}
+
+\begin{document}
+    \newcommand{\AND}{\unskip%
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox%
+        \ignorespaces%
+    }
+    \newsavebox\ANDbox%
+    \sbox\ANDbox{}
+
+    \placelastupdatedtext%
+    \begin{header}
+        \textbf{\fontsize{24 pt}{24 pt}\selectfont Martín do Río Rico}
+
+        \vspace{0.3cm}
+
+        \normalsize
+        \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}A Coruña, Spain}%
+        \kern0.25cm%
+        \AND%
+        \kern0.25cm%
+        \mbox{\hrefWithoutArrow{mailto:mdoriorico@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}mdoriorico@gmail.com}}%
+        \kern0.25cm%
+        \AND%
+        \kern0.25cm%
+        \mbox{\hrefWithoutArrow{tel:+34 654 85 60 27}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}654 85 60 27}}%
+        \kern0.25cm%
+        \AND%
+        \kern0.25cm%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/martín-do-río-rico-265a912b4}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}Martín do Río Rico}}%
+        \kern0.25cm%
+        \AND%
+        \kern0.25cm%
+        \mbox{\hrefWithoutArrow{https://github.com/Meleagrista}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}Meleagrista}}%
+    \end{header}
+
+    \vspace{0cm}
+
+    \input{game-design/experiencia.tex}
+    \input{game-design/educación.tex}
+    \input{game-design/proyectos.tex}
+    \input{game-design/tecnologías.tex}
+    \input{game-design/intereses.tex}
+
+\end{document}
